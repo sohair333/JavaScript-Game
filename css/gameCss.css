@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('images/sky3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    cursor:url('images/cursor.png'), auto;
+}
+.volume{
+    /*margin: 10px;*/
+    direction: rtl;
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    position: fixed;
+
+}
+.egg{
+    /* position: absolute; */
+    top: 18px;
+    height: 5px;
+    width: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 99;
+}
+#egg1 img{
+    /* left: calc(20%+8%/2-2%/2); */
+    margin-left: 300px;
+    margin-top: 100px;
+}
+#egg2 img{
+    /* left: calc(40%+8%/2-2%/2); */
+    margin-left: 500px;
+    margin-top: 100px;
+}
+#egg3 img{
+    /* left: calc(60%+8%/2-2%/2); */
+    margin-left: 700px;
+    margin-top: 100px;
+}
+
+.bullyseye{
+    display: none;
+    position:absolute;
+    bottom: 0px;
+    height: 7%;
+    width: 7%;
+    background: url('images/bullseye1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+#bullseye1{
+    left: calc(20%+8%/2-7%/2);
+}
+#bullseye2
+{
+    left: calc(40%+8%/2-7%/2);
+}
+#bullseye3{
+    left: calc(60%+8%/2-7%/2);
+}
+#floor{
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: #292929;
+    bottom: 0;
+    z-index: 10;
+}
+#basket{
+    height: 100px;
+    width: 85px;
+    position: absolute;
+    bottom: 5px;
+    background: url('images/basket.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+#score_1{
+    position: absolute;
+    color: #424242;
+    font-size: 30px;
+    top: 45%;
+    left: 30%;
+}
+.text1{
+    font-size: 35px;
+    color: tomato;
+    margin-left: 20px;
+    margin-top: 50px;
+    text-shadow: darksalmon;
+}
+.gameGif{
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+}
+
+.text2{
+    font-size: 35px;
+    color:rgb(18, 18, 56); 
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+
+.text3{
+    font-size: 20px;
+    color:rgb(138, 14, 14); 
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+.text4{
+    font-size: 35px;
+    color:green; 
+    margin-left: 200px;
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+

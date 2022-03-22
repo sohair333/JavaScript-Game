@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="shortcut icon" href="images/3222637BZKDENeO.gif" type="image/x-icon">
+</head>
+<body>
+    
+
+    <div id="header">
+        <div>
+            <p>Current Player:<span id="currentPlayer"></span></p>
+            <p>Last Game Seen:<span id="lastEnterDate"></span></p>
+        </div>
+        <span>Time Stamp<p id="gameTimer"></p></span>
+        
+        <p>Score <span id="gameScore"></span></p>
+    </div>
+
+    <div class="gameplay" id="gameplay">
+
+
+      
+      
+        <img src="images/basket.png" alt="" id="basketImage"srcset="">
+    </div>
+
+
+    <div id="scoreControl" style="display: none;">
+        <div id="conatiner">
+           <p id="message">You are Winner</p>
+            <p>Score:</p> <p id="Score">5</p> 
+           <button id="tryAgain">Try Again</button>
+           <!-- <button id="home">Home</button> -->
+
+        </div>
+
+    </div>
+    <div id="floor"></div>
+    <script src="js/requestApi.js"></script>
+    <script src="js/Controlgame.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/egg.js"></script>
+    <script src="js/index.js"> </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Roboto Mono', monospace;
+    src: url(fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
+         url(fonts/roboto-mono-v12-latin-regular.woff) format('woff'),
+         url(fonts/roboto-mono-v12-latin-regular.ttf) format('truetype');
+}
+ html *{
+font-family: 'Roboto Mono';
+} 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+body{
+    position: relative;
+    font-size: 20px;
+}
+.gameplay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-image:url(../images/sky3.png);
+    
+}
+#basketImage{
+    position: absolute;
+    width: 100px;
+    height: auto;
+}
+.GameEgg{
+    position: absolute;
+    width: 25px;
+    height: auto;
+    src: url(../images/diedblack.png);
+}
+#header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(132, 194, 159);
+    z-index: 99;
+    color: rgb(146, 15, 15);
+
+}
+#scoreControl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    background-color:rgba(156, 156, 156, 0.5) ;
+    z-index: 9988;
+}
+#conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;   
+    background-image: url(../images/gameover.gif);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+#conatiner>*{
+    margin: 3px;
+    color: rgb(7, 29, 2);
+    font-size: 25px;
+    font-weight: 500;
+}
+#conatiner>button{
+    background-image: url(../images/backgound_002.png);
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    background-size: 100% 100%;
+    outline: none;
+    color: wheat;
+    font-size: 25px;
+
+}
+#lastEnterDate{
+    font-size: 25px;
+}
+#tryAgain{
+    cursor: pointer;
+}
+/* #home{
+    transform: scale(1.1);
+} */
+#myName{
+    position: absolute;
+    top: 129px;
+    width: 300px;
+    height: 30px;
+    border-radius: 2px;
+    border: 2px salmon solid;
+    display: block;
+    margin: 20px ;
+    text-align: center;
+    transition: all 2s;
+}
+#myName:hover{
+    width: 310px;
+    height: 40px;
+    background-color: rgb(224, 189, 189);
+    transition:all 0.5s ease-in;
+}
+.normal,.easy{
+position: absolute;
+top: 200px;
+background-color: salmon;
+border-radius: 5px;
+padding: 10px;
+width: 150px;
+margin: 10px;
+}
+.easy{
+    left: 180px;
+}
+.normal:hover,.easy:hover{
+transform: scale(1.1,1.1);
+background-color:rgb(177, 73, 61);
+}
+#floor{
+    position: absolute;
+    height: 3%;
+    width: 100%;
+    background-color: #292929;
+    bottom: 0;
+    z-index: 10;
+}
